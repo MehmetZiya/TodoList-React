@@ -1,13 +1,86 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color:lightblue;
+  box-sizing: border-box;
+
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #13579b;
+}
+.App h2{
+  color: rgb(136, 107, 9)
+}
+nav{
+  margin: 5px 15px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+a{
+  padding: 20px;
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:#13579b;
+  border: 3px solid #13579b;
+  border-radius: 10px;
+  margin: 5px 15px;
+}
+
+a:hover{
+  color: rgb(161, 204, 220);
+  border-radius: 10px;
+  background-color: rgba(7, 8, 113, 0.705);
+}
+
+.todoList {
+  display: grid;
+  grid-template-columns: 20% 40% 20% 10% 10%;
+  
+}
+.todo-btn {
+  padding: 1px;
+  margin: 8px;
+}
+.done {
+  background-color: rgb(3, 163, 94);
+  color:honeydew;
+}
+.delete{
+  background-color: rgb(225, 32, 29);
+  color:honeydew;
+}
+.todo-header{
+  display: grid;
+  grid-template-columns: 20% 40% 20% 10% 10%;
+  color:rgb(136, 107, 9)
+
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+input{
+  width: 50%;
+  padding: 20px;
+  margin: 5px 20px;
+}
+.add-todo-btn{
+  background-color: rgb(15, 124, 220);
+  color:honeydew;
+  padding: 20px 40px;
+  margin-top: 20px;
 }
